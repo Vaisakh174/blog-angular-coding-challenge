@@ -25,7 +25,7 @@ app.use('/api', api);
 
 
 // set port 
-const port = 3000;
+const port = process.envPORT|| 3000;
 app.listen(port, () => {
     console.log(`........port is now connected at ${port} ........`);
 });
