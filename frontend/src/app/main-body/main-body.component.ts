@@ -11,7 +11,7 @@ export class MainBodyComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  article_title:any="MEAN Stack Development";
+  article_title:any="";
   dates:any="12/11/2022";
   
 }

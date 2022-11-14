@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ApiService } from '../api.service';
 @Component({
   selector: 'app-blogger-datails',
   templateUrl: './blogger-datails.component.html',
@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BloggerDatailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api : ApiService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {this.getdata();
   }
   // for mongo
   Name: any = "Vaisakh";
-  count: any=0;;
-
+  count: any = 0;;
+  blogerData: any = [];
 
   flag: any = true;
 
@@ -28,6 +28,15 @@ export class BloggerDatailsComponent implements OnInit {
       this.flag = true;
     }
   }
+  
+  getdata() {
+    this.api.getall().subscribe(res => {
+      this.blogerData = res;
+      console.log("incoming data", res);
+    });
+  }
 
+
+  
 
 }

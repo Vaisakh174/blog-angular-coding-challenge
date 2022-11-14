@@ -12,5 +12,5 @@ const blogschema = new schema({
     date:{type:Date,default:Date.now()}
 
 });
-let blogDATA = mongoose.model("studentdetail", blogschema);
+let blogDATA = mongoose.model("myBlogData", blogschema);
 module.exports = blogDATA;

@@ -10,6 +10,10 @@ import { MainBodyComponent } from './main-body/main-body.component';
 import { CommentsComponent } from './comments/comments.component';
 import { SigninComponent } from './signin/signin.component';
 import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './api.service';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,9 +28,9 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, ReactiveFormsModule, FormsModule, HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

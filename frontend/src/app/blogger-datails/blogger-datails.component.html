@@ -2,13 +2,13 @@
 <div class="border rounded m-2 mt-4">
     <div class="d-flex text-white bd-highlight ">
         <div class="p-2 bd-highlight">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.MXXcVA3-a55KwAUXCG5HAAHaE8&pid=Api&P=0" class=" rounded-circle"
+            <img src= class=" rounded-circle"
                 width="50" height="50" alt="blogger pic">
                 <!-- <img src="./assets/img/my_photo.jpg" class=" rounded-circle"
                 width="50" height="50" alt="blogger pic"> -->
         </div>
         <div class="mr-auto p- mt-4 bd-highlight">
-            <h6>{{Name}}</h6>
+            <h6>{{blogerData[0].blogerName}}</h6>
         </div>
         <div class="p-2 mt-2 bd-highlight">
             <button type="button" class="btn rounded  btn-warning" *ngIf="flag" (click)="incCount()"  >Follow</button>
