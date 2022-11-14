@@ -2,7 +2,7 @@
 <div class="border rounded m-2 mt-4">
     <div class="d-flex text-white bd-highlight ">
         <div class="p-2 bd-highlight">
-            <img src= class=" rounded-circle"
+            <img src={{blogerData[0].blogerImg}} class=" rounded-circle"
                 width="50" height="50" alt="blogger pic">
                 <!-- <img src="./assets/img/my_photo.jpg" class=" rounded-circle"
                 width="50" height="50" alt="blogger pic"> -->
@@ -17,7 +17,7 @@
             <button type="button" class="btn rounded  btn-warning" *ngIf="!flag" (click)="decCount()">Unfollow</button>
         </div>
         <div class="p-2 mt-2 bd-highlight disp">
-            <button type="button" class="btn rounded  btn-warning">Followers: {{count}}</button>
+            <button type="button" class="btn rounded  btn-warning">Followers: {{blogerData[0].followCount}}</button>
         </div>
     </div>
 </div>

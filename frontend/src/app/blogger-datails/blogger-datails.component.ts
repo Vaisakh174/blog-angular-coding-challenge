@@ -12,19 +12,18 @@ export class BloggerDatailsComponent implements OnInit {
   ngOnInit(): void {this.getdata();
   }
   // for mongo
-  Name: any = "Vaisakh";
-  count: any = 0;;
+  Name: any = "";
   blogerData: any = [];
 
   flag: any = true;
 
   incCount() {
-    this.count++;
+    this.blogerData[0].followCount++;
     this.flag = false;
   }
   decCount() {
-    if (this.count > 0) {
-      this.count--;
+    if (this.blogerData[0].followCount > 0) {
+      this.blogerData[0].followCount--;
       this.flag = true;
     }
   }
@@ -32,7 +31,7 @@ export class BloggerDatailsComponent implements OnInit {
   getdata() {
     this.api.getall().subscribe(res => {
       this.blogerData = res;
-      console.log("incoming data", res);
+      console.log("incoming data",this.blogerData[0].blogerName );
     });
   }
 
