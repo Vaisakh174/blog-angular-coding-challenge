@@ -20,19 +20,19 @@ router.get('/getall', async (req, res) => {
 });
 
 
-// fetch single student (get)
-router.get('/getsingle', async (req, res) => {
+// // fetch single student (get)
+// router.get('/getsingle', async (req, res) => {
 
-    try {
-        let id = req.params.id;
-        const singlestudent = await DATA.findById(id);
-        console.log(`from get with id method ${singlestudent}`);
-        res.send(singlestudent)
-    } catch (error) {
-        console.log(`error from get method ${error}`);
-    }
+//     try {
+//         let id = req.params.id;
+//         const singlestudent = await DATA.findById(id);
+//         console.log(`from get with id method ${singlestudent}`);
+//         res.send(singlestudent)
+//     } catch (error) {
+//         console.log(`error from get method ${error}`);
+//     }
 
-});
+// });
 
 
 
@@ -47,7 +47,16 @@ router.post('/post', async (req, res) => {
             articleTitle: req.body.articleTitle,
             articleDate: req.body.articleDate,
             comments: req.body.comments,
-            content: req.body.content
+            content1: req.body.content1,
+            content2: req.body.content2,
+            content3: req.body.content3,
+            content4: req.body.content4,
+            content5: req.body.content5,
+            content6: req.body.content6,
+            content7: req.body.content7,
+            content8: req.body.content8,
+            content9: req.body.content9,
+            content10: req.body.content10
         }
         const newdata = new DATA(item);
         const savedata = await newdata.save();
@@ -61,42 +70,42 @@ router.post('/post', async (req, res) => {
 });
 
 
-// delete student
-router.delete('/delete/:id', async (req, res) => {
+// // delete student
+// router.delete('/delete/:id', async (req, res) => {
 
-    try {
-        let id = req.params.id;
-        let deletestudent = await DATA.findByIdAndDelete(id);
-        console.log(`from delete method ${deletestudent}`);
-        res.send(deletestudent);
+//     try {
+//         let id = req.params.id;
+//         let deletestudent = await DATA.findByIdAndDelete(id);
+//         console.log(`from delete method ${deletestudent}`);
+//         res.send(deletestudent);
 
-    } catch (error) {
-        console.log(`error from get method ${error}`);
-    }
+//     } catch (error) {
+//         console.log(`error from get method ${error}`);
+//     }
 
-});
+// });
 
 
-// update student
-router.put('/update', async (req, res) => {
+// // update student
+// router.put('/update', async (req, res) => {
 
-    try {
-        let id = req.body._id;
-        let item = {
-            "name": req.body.name,
-            "age": req.body.age
-        }
-        let updatestudent = await DATA.findByIdAndUpdate(
-            { "_id": id },
-            { $set: item }
-        );
-        res.send(updatestudent);
-        console.log(`from put method old data ${updatestudent}`);
-    } catch (error) {
-        console.log(`error from get method ${error}`);
-    }
+//     try {
+//         let id = req.body._id;
+//         let item = {
+//             "name": req.body.name,
+//             "age": req.body.age
+//         }
+//         let updatestudent = await DATA.findByIdAndUpdate(
+//             { "_id": id },
+//             { $set: item }
+//         );
+//         res.send(updatestudent);
+//         console.log(`from put method old data ${updatestudent}`);
+//     } catch (error) {
+//         console.log(`error from get method ${error}`);
+//     }
 
-});
+// });
 
 
 

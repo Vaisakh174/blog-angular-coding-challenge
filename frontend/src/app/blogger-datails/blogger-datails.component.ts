@@ -6,16 +6,17 @@ import { ApiService } from '../api.service';
   styleUrls: ['./blogger-datails.component.css']
 })
 export class BloggerDatailsComponent implements OnInit {
-
-  constructor(private api : ApiService) { }
-
-  ngOnInit(): void {this.getdata();
-  }
-  // for mongo
-  Name: any = "";
   blogerData: any = [];
 
   flag: any = true;
+  constructor(private api: ApiService) { }
+
+  ngOnInit(): void {
+    this.getdata();
+  }
+  
+
+
 
   incCount() {
     this.blogerData[0].followCount++;
@@ -27,15 +28,15 @@ export class BloggerDatailsComponent implements OnInit {
       this.flag = true;
     }
   }
-  
+
   getdata() {
     this.api.getall().subscribe(res => {
       this.blogerData = res;
-      console.log("incoming data",this.blogerData[0].blogerName );
+      console.log("incoming data", this.blogerData[0].blogerName);
     });
   }
 
 
-  
+
 
 }

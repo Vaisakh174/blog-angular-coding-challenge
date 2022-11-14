@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-main-body',
@@ -7,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainBodyComponent implements OnInit {
 
-  constructor() { }
+  blogerData: any = [];
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
+    this.getdata();
   }
-  article_title:any="";
-  dates:any="12/11/2022";
-  
+
+
+  getdata() {
+    this.api.getall().subscribe(res => {
+      this.blogerData = res;
+      console.log("incoming data", this.blogerData[0].articleDate);
+    });
+  }
+
 }
