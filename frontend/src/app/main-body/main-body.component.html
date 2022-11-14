@@ -1,0 +1,541 @@
+<app-blogger-datails></app-blogger-datails>
+<div class="d-flex justify-content-center">
+    <div class="border p-3 rounded   mt-3 mb-2">
+
+        <div class=" d-flex justify-content-center">
+            <div class="text-center mb-3  rounded  p-3 border-article">
+                <div class="col-12">
+                    <h2>{{article_title}}</h2>
+                    <p>Article published date: {{dates}}</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center">
+            <div class="rounded  border-article">
+                <div class="content col-12 pl-5 pr-5">
+                    <h4>WHAT IS MEAN STACK DEVELOPMENT</h4>
+
+                    <p>What is MEAN stack development? Is it the same as full-stack development? What are the core
+                        technologies of the MEAN stack? What is the salary of a MEAN stack developer? In the article,
+                        you’ll
+                        find explicit answers to these questions. We’ve looked into the advantages and disadvantages of
+                        the
+                        MEAN stack. So, keep reading to find out whether it’s worth implementing this approach for your
+                        project.</p>
+                    <p>The IT world changes fast, and it’s crucial for developers to stay up to date with the
+                        technologies
+                        they choose for the projects. That’s why there is such a concept as a technology stack. It is a
+                        set
+                        of languages and tools combined to deliver the best development results and high application
+                        performance. For each project, you need to build the client and the server sides and integrate a
+                        database. The main trait of a successful tech stack is that the technologies for each part
+                        interact
+                        with each other well. The thing is, some databases don’t support some languages. For example, if
+                        you
+                        write the app’s backend with C#, you cannot implement a PostgreSQL database. There are numerous
+                        stack options that aim at different purposes and have various advantages and disadvantages.
+                        Today,
+                        we will talk about the MEAN stack, which is widely used for web development. We’ll discuss why
+                        it is
+                        now dominating the world of web development and why it is worth becoming a MEAN stack developer.
+                    </p>
+
+                    <p>The title “MEAN” is formed with the first letters of each of four technologies lying in its
+                        basis.
+                    </p>
+                    <img src="https://existek.com/wp-content/uploads/2021/12/2-1.png" alt="">
+                    <p>These frameworks and tools cover all development aspects – database, frontend, and backend. In
+                        the
+                        case of MEAN stack development, these technologies are:</p>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>Express.js</li>
+                        <li>Angular</li>
+                        <li>Node.js</li>
+                    </ul>
+                    <p>Until recent years, the “A” letter of the MEAN abbreviation stood for Angular.js. However, at the
+                        very end of 2021, Google will stop the support of Angular.js and replace it with Angular 2.0+,
+                        which
+                        is based on TypeScript instead of JavaScript. So, traditionally, when someone mentioned the MEAN
+                        stack, they meant a set of technologies entirely based on JavaScript. Still, in this article,
+                        we’ll
+                        replace Angular.js with Angular and describe how it affects development.</p>
+                    <p>What distinguishes this technology set is that it’s wholly based on JavaScript (apart from
+                        Angular
+                        based on TypeScript), which is incredibly beneficial for several reasons. First of all,
+                        JavaScript
+                        has been taking first place on the ratings of the most popular technologies for years. Almost
+                        70% of
+                        professional developers choose this language over the others. Its main advantage is that due to
+                        the
+                        numerous frameworks, it allows using it on the front end as well as on the back end.
+
+                        Such popularity of JavaScript means that if you’re looking for a MEAN stack developer for your
+                        project, there’s a strong possibility that the learning curve will be very smooth, so the
+                        programmers will be able to get to work quickly. We’ll look into MEAN stack benefits later in
+                        the
+                        article, and for now, let’s discuss the technologies used in it.</p>
+                    <h4>MongoDB</h4>
+                    <p>We’ll start with the database. In some sense, it’s the core part of any application because it
+                        stores
+                        all the necessary data used by the software. That’s why it’s worth paying particular attention
+                        to
+                        the characteristics of the used database system.
+
+                        In the MEAN stack, M stands for MongoDB as the database solution. MongoDB is a NoSQL database.
+                        NoSQL
+                        databases store data differently compared to relational tables. NoSQL stands for “not only SQL,”
+                        and
+                        it is a more flexible approach. They allow using graphs, key-value relationships, wide-column,
+                        or
+                        document type, while SQL databases deal only with tables.
+
+                        Some people think that NoSQL databases are unsuitable for large projects, but they can handle a
+                        very
+                        high load if adequately organized. Their most significant advantage is that you can amend
+                        changes on
+                        the go and add new features quickly as the application grows due to the data models.
+
+                        Also, NoSQL databases, and especially, MongoDB can be much faster in comparison to their SQL
+                        competitors. The thing is, in SQL databases, all tables are interconnected, and queries for a
+                        single
+                        object require joins from all connected tables. Whereas in NoSQL databases, data is stored in a
+                        form
+                        optimized for queries so that you receive results faster.
+
+                        Another significant benefit of MongoDB as a NoSQL database is that it maps its data structures
+                        the
+                        same way as in particular programming languages. So, it saves lots of coding time and decreases
+                        the
+                        frequency of bugs’ occurrence.</p>
+                    <img src="https://existek.com/wp-content/uploads/2021/12/3-1.png" alt="">
+                    <p>MongoDB is a cross-platform database system built in C++. It stores data in key-value pairs. It
+                        is
+                        document-based, meaning that fields may vary from document to document. A good analogy of a
+                        document
+                        in MongoDB would be an object in the OOP approach. MongoDB doesn’t require updating the whole
+                        table
+                        when you add a new value, and it leads to noticeable time savings and easy data storage for
+                        large
+                        projects. It’s worth highlighting that JavaScript is all you need to know to handle MongoDB.
+
+                        MongoDB has numerous upsides, especially regarding large projects and high loads, but we should
+                        say
+                        that it is not a great option in terms of data integrity because compared to RDBMS, in MongoDB,
+                        it
+                        is not a requirement.
+
+                        When we’ve figured out essential information about MongoDB, it’s time to move to the next
+                        technology
+                        in the MEAN stack – Express.js.</p>
+                    <h4>Express.js</h4>
+                    <p>Express.js is a reliable server web framework for Node.js. Developers use it for single,
+                        multi-page,
+                        and hybrid web applications and APIs. Its primary purpose is to handle HTTP requests, such as
+                        GET or
+                        DELETE. It’s possible to achieve with just Node.js, but in this case, you’ll need to write your
+                        own
+                        code for it. To avoid such time spendings, Node.js introduces a flexible Express.js framework.
+                        It is
+                        also built with JavaScript, and you don’t need to know other languages to use it.</p>
+                    <img src="https://existek.com/wp-content/uploads/2021/12/4-1.png" alt="">
+                    <p>The Pug engine lies at the heart of Express.js. It is the most widely used templating framework.
+                        It
+                        provides template support, which leads to dynamic HTML page rendering.
+
+                        As for the pros and cons of Express.js, the first thing we would like to highlight is extremely
+                        fast
+                        Input/Output, which is highly important for server-side technology. It is asynchronous and uses
+                        an
+                        MVC (Model-View-Controller).
+
+                        Let’s say a word about how this framework works. Primarily, it was used for creating RESTful
+                        APIs
+                        that allow receiving the request from the frontend, sending it to the backend, and returning the
+                        appropriate response. It describes the MEAN stack architecture shortly, but we’ll look into it
+                        in
+                        more detail later in the article.As for some more obvious Express.js advantages, it has a
+                        wonderful
+                        open-source community where developers contribute and give feedback on the code. It can be
+                        beneficial for aspiring and professional developers. Also, it is the most supported Node.js
+                        framework. That’s why it’s constantly updated, and bugs are fixed immediately if there are any.
+
+                        The event-driven callback nature is among the disadvantages of this part of the MEAN stack. It’s
+                        not
+                        harmful itself, but it can be very challenging for those programmers who are used to
+                        async/await.
+                        Instead of diving deep into the callback nature and figuring out how it works, they may write
+                        all
+                        code in callbacks, which makes the app almost impossible to maintain in the future.</p>
+                    <h4>Angular</h4>
+                    <p>Till December 31st, Angular.js existed as a reliable JavaScript framework created and maintained
+                        by
+                        Google. However, due to some problems in architecture, Google hasn’t updated it with new
+                        features
+                        approximately since 2018. It received only security updates and critical features. In 2016, the
+                        Angular team in Google decided to rewrite Angular.js into Angular almost completely without
+                        backward
+                        compatibility and provide further enhancements to Angular instead of Angular.js. The New Angular
+                        version is based on TypeScript. It is open-source as well as the other technologies of the MEAN
+                        stack. Its most potent characteristic is that it uses the MVC architecture. MVC stands for
+                        Model-View-Controller. It is a pattern that divides all application logic into three components.
+                        The
+                        main goal of MVC is to separate the input from data processing and output. The model handles the
+                        data logic. The view is responsible for how the user interacts with an app, and the controller
+                        regulates the interaction of both components with the user. In simpler words, the controller
+                        receives the information from the user, transfers it to the model, which processes it, and
+                        passes it
+                        to the view that displays it visually.</p>
+                    <img src="https://existek.com/wp-content/uploads/2021/12/5-1.png" alt="">
+                    <p>One of the most significant advantages of the MVC model is the increased development speed. With
+                        the
+                        MVC, developers can simultaneously work on different app parts. While one dev is working with
+                        the
+                        visual presentation, the other may work with the business logic and set up the controller.
+                        Another
+                        reason for faster development with the MVC is that when one part is modified, the others remain
+                        unchanged. It is crucial for web applications because the user interface tends to change
+                        frequently.
+
+                        Angular fully supports all HTML syntax and uses it as the primary templating language. So, devs
+                        can
+                        express the components according to HTML rules. You may want to ask why it is not enough to use
+                        plain HTML then? Well, it’s a great declarative language, but compared to Angular, it has a very
+                        restricted set of opportunities.
+
+                        Angular has a lot of useful libraries and frameworks for different app types. Besides, it
+                        contains
+                        all the necessary features of an advanced client-side language: deep linking, data binding,
+                        testability story, reusable components, etc.
+
+                        If we step away from the technical details a bit, we should mention the constant release of
+                        updates
+                        and excellent community support.
+
+                        The reliability of this web framework is proved by the list of companies that use it:</p>
+                    <ul>
+                        <li>Amazon</li>
+                        <li>Nike</li>
+                        <li>HBO</li>
+                        <li>Google</li>
+                        <li>Forbes</li>
+                    </ul>
+                    <h4>Node.js</h4> Some people call Node.js a framework, but in fact, it is a running environment
+                    meaning
+                    that its primary purpose is to execute JavaScript code from outside of the browser. It is used for
+                    building web servers and applications.
+
+                    Node.js has completely changed the world of web development. Such popular front-end frameworks as
+                    Bootstrap, Angular, and others were released a long time ago, but the back-end development was
+                    always a
+                    more complicated task. However, with the launch of Node.js, it became possible to create server-side
+                    applications with JavaScript.
+                    <img src="https://existek.com/wp-content/uploads/2021/12/6-1.png" alt="">
+                    <p>Node.js uses the event-driven non-blocking I/O model, making it a perfect candidate for
+                        applications
+                        that process vast amounts of data and perform numerous tasks simultaneously. Event-driven I/O
+                        works
+                        like this: while one task is being processed in the background, Node.js receives the next one
+                        and
+                        immediately starts working on it. Moreover, such an operation doesn’t require a significant
+                        amount
+                        of CPU.
+
+                        Node.js has proven itself excellent for real-time web apps. It has high performance because it
+                        was
+                        initially designed for optimizing the scalability of apps and their capacity.
+
+                        In addition, you may find NPM (Node.js package manager) very useful, especially if you’re
+                        working
+                        with a tremendous amount of code. It unites some parts of the code in modules so that Node.js
+                        can
+                        handle dependency conflicts quickly and effectively.
+
+                        Since we’re talking about large amounts of data, we should mention the dashboarding in Node.js.
+                        HTTP
+                        requests handling are among its features, and HTTP requests are large files streams. Node.js
+                        uses
+                        GraphQL for visualizing data.
+
+                        As you can see, Node.js allows developers to perform some tasks that are impossible with some
+                        other
+                        environments. It also uses the V8 engine considered the fastest one for JavaScript.
+
+                        Well, now, when we’ve figured out the essential information about all parts of the MEAN stack,
+                        let’s
+                        proceed to the advantages and disadvantages of this set of technologies.
+                    </p>
+                    <h4>MEAN STACK DEVELOPMENT: PROS AND CONS</h4>
+                    <p>Like any concept, MEAN stack development has its pros and cons. We’re going to look into its
+                        strengths and weaknesses in terms of web development.
+
+                        First off, let’s start with the JavaScript and TypeScript being the core languages of the whole
+                        stack. The popularity of these technologies is the most obvious advantage in this case. The huge
+                        number of developers already knowing them leads to a smooth learning curve. So, the chances that
+                        you’ll easily find a specialist who can quickly start working with the MEAN stack are very high.
+
+                        Moreover, we should point out the compilation. TypeScript that lies at the core of Angular,
+                        needs to
+                        compile the code, unlike JavaScript. It means that the code should be translated to pure
+                        JavaScript
+                        before running it. The compilation usually takes just a few seconds. Though it may seem like a
+                        waste
+                        of time in terms of a large project, it saves hours and days that would otherwise be spent on
+                        testing and debugging. The thing is, when the code it’s compiled, numerous runtime errors
+                        appear.
+                        Consequently, if even the smallest bug isn’t found and fixed, it may lead to the application
+                        crashing. So, a few-second time for compilation is more of an advantage rather than a downside.
+
+                        Though, to be fair, we should say that many practices are allowing us to avoid runtime errors.
+                        For
+                        example, one should not use uninitialized variables, check memory limits, check the bounds of
+                        the
+                        arrays, etc.</p>
+                    <p>The MEAN stack development tends to be relatively quick because of the two technologies lying in
+                        its
+                        core: TypeScript and JavaScript. The first one has optional dynamic and static typing, but
+                        Express.js and Node.js, based on JavaScript, have only dynamic typing. The world of developers
+                        is
+                        divided into two camps. Some think that dynamic typing is more of a disadvantage than an upside
+                        because if there are no strictly defined guidelines, it leads to numerous bugs. However, it may
+                        save
+                        lots of time due to the simpler code.
+
+                        We should mention the fact that MEAN is entirely open-source. It means that all components are
+                        free,
+                        and developers can access public repositories and libraries at any time.
+
+                        Speaking of publicly accessible code, let’s talk a bit about the community. Though the
+                        technologies
+                        of the MEAN stack are relatively new, they got trusted and reliable. According to this, many
+                        developers have worked with them for a long time. So, if you have a challenging situation with
+                        the
+                        code, there’s a great chance that somebody has already encountered the problem that you’re
+                        having.
+                        So that it’s easy to find answers to your questions and, consequently, create an application
+                        without
+                        numerous errors.
+
+                        Cost-effectiveness is also a considerable advantage in terms of MEAN stack development. From the
+                        business perspective, hiring one MEAN stack developer is much more beneficial than four
+                        specialists,
+                        each of whom will work on one application part only. Apart from budget savings, development time
+                        is
+                        also reduced because devs won’t have to spend it communicating with each other and establishing
+                        something.
+
+                        Cloud solutions have gained more and more popularity in recent years for several reasons. First
+                        of
+                        all, accessibility from all devices is a great pro. Cloud apps are excellent for enterprises
+                        because
+                        it guarantees that all employees are working with the same app version at any moment.
+                        Considering
+                        this, we should highlight MongoDB as the significant upside. It is a NoSQL database program that
+                        is
+                        built for the cloud.</p>
+                    <p>However, there is a disadvantage related to MongoDB. It is oriented toward small and medium-sized
+                        projects, but it might not be the best choice if we’re talking about enterprises.
+
+                        As for the other cons of MEAN stack development, we should mention JavaScript again. Though it
+                        is
+                        the most popular programming language, it is sometimes a bit more flexible than it might be, and
+                        in
+                        particular cases, it may lead to angled code that is difficult to document.
+
+                        The last significant downside is the poor isolation of the app’s business logic from the server
+                        operations.</p>
+                    <img src="https://existek.com/wp-content/uploads/2021/12/8-1.png" alt="">
+                    <h4>MEAN STACK ARCHITECTURE</h4>
+                    <p>As we already know, the MEAN stack includes four technologies – Node.js, Express.js, Angular, and
+                        MongoDB. Each of them is responsible for particular processes. Let’s discuss it in more detail.
+
+                        It will be easier to understand the functions of each part of the MEAN stack if we present it
+                        visually. So, let’s look at the scheme below.</p>
+                    <img src="https://existek.com/wp-content/uploads/2021/12/7-1.png" alt="">
+                    <p>For now, let’s proceed from point to point. Angular is the first thing a user communicates with.
+                        When
+                        the request is sent, it reaches Angular at once. So, this framework’s goal is to receive
+                        requests
+                        from users on the frontend, send them to Node.js, and when the cycle goes through all the other
+                        phases, Angular returns the response to the user.
+
+                        So, Angular sends requests to Node.js to handle it later. When Node.js receives the request, it
+                        will
+                        parse it and send it to Express.js. Node.js is the central part of the MEAN stack. It is the
+                        core
+                        part that handles the requests between client and server.
+
+                        The next component is Express.js. It implies the APIs, which are used for accessing the
+                        database.
+                        So, Express.js uses a particular API to call the database, depending on whether a user wants to
+                        store or fetch the data.
+
+                        When MongoDB receives a request from Express.js, it handles it and returns the response.
+
+                        Express.js returns it to Node.js, which handles it, and sends it to Angular. In the end, Angular
+                        displays the data fetched from the MongoDB database to the user.</p>
+                    <h4>MEAN STACK DEVELOPER SALARY</h4>
+                    <p>Now, when we’ve figured out what is MEAN stack, and how it works precisely, let’s see what job
+                        opportunities there are and what the MEAN stack developer salary is.
+
+                        It’s rather difficult to name the exact salary of a particular specialist because it will vary
+                        significantly depending on the world region and one’s professional experience. However, let’s
+                        take
+                        the United States as the ground zero. If we consider the middle MEAN stack developer, we will
+                        have
+                        an average salary accounting for about $125K per year, according to Glassdoor. Of course, for a
+                        junior developer, the number will constitute about $75K yearly, and on the opposite, a senior
+                        developer can expect a $200K annual salary.
+
+                        Undoubtedly, the United States is probably the most expensive world region in terms of
+                        development
+                        rates. Although the quality of the provided services is fully in line with the prices, sometimes
+                        the
+                        budget doesn’t allow for outsourcing to the US.
+
+                        If you still want the highest quality but for a lower price, you may consider outsourcing to
+                        Europe.
+                        Numerous countries provide excellent development services. Among all, we would like to point out
+                        Ukraine, which is the leading outsourcing destination in Eastern Europe.
+
+                        If we scroll through different ratings related to software development, we will find Ukraine in
+                        most
+                        of them. So, global recognition is the first noticeable advantage of Ukraine as an outsourcing
+                        destination.
+
+                        The development community in Ukraine is also highly active. There are numerous large and small
+                        groups of developers that hold meetings, conferences, etc. Among the most popular events, there
+                        are
+                        Lviv IT Arena, and IForum.
+
+                        Moreover, a great deal of attention is paid to technical education. Yearly, more than 20k
+                        students
+                        graduate from technical universities. Also, we should mention the modern approach in education
+                        that
+                        provides the possibility to learn the latest technologies and gain the knowledge of using them
+                        in
+                        real life.
+
+                        For now, let’s focus more on the numbers, and see what salaries MEAN stack developers can expect
+                        in
+                        Ukraine. DOU held a survey that showed many interesting facts about the IT industry in Ukraine.
+                        One
+                        of the issues was the average experience of specialists, and we’ve got such statistics:</p>
+                    <ul>
+                        <li>Less than 1 year – 13%</li>
+                        <li>1-2 years – 25%</li>
+                        <li>3-5 years – 29%</li>
+                        <li>6-10 years – 17%</li>
+                        <li>10+ years – 12%</li>
+                    </ul>
+                    <p>As we can see, the greatest percentage of developers has from 3 to 5 years of experience. Let’s
+                        see,
+                        what monthly salaries they have depending on the working experience:</p>
+                    <li>Junior MEAN stack developer – $600</li>
+                    <li> Middle developer – $3500/li>
+                    <li>Senior MEAN stack web developer – $6000</li>
+                    <p>We took the data from DOU. On this web resource, you can find much valuable information about the
+                        IT
+                        sphere in Ukraine. The numbers provided above are actual for the capital but they may be smaller
+                        in
+                        other towns. Also, the salaries will definitely vary from company to company, but you can see
+                        the
+                        average numbers</p>
+                    <h4>MEAN Stack Developer Skills</h4>
+                    <p>MEAN stack development implies a deep knowledge of JavaScript. Let’s see what other skills a
+                        person
+                        should have to be called a MEAN stack developer:</p>
+                    <ul>
+                        <li>HTML/CSS/JavaScript. As we’re talking about web application development, a sound knowledge
+                            of
+                            these
+                            technologies is essential.</li>
+                        <li>A MEAN stack developer is a full-stack developer, so he should be able to design software
+                            architecture, and deeply understand the programming paradigm in general.</li>
+                        <li>Knowledge of DevOps tools (continuous integration, continuous delivery, deployment
+                            automation).
+                            This
+                            is not a necessary requirement for a MEAN stack developer, but if the team is working on a
+                            large
+                            project, sometimes these skills would be useful.</li>
+                        <li>Deep understanding of database structure. As full-stack developers work with both backend
+                            and
+                            frontend, they should be able to design a database and set it up according to particular
+                            system
+                            requirements.</li>
+                        <li>Knowledge of various SDLC models with a focus on Agile development. If the project is
+                            lengthy
+                            and
+                            complicated, Agile methodology is often the best option, because it provides higher
+                            flexibility
+                            compared to its competitors, and consequently, saves more time and budget.</li>
+                    </ul>
+                    <p>Speaking of SDLC models, it’s essential to be good at them, because each team has its preferred
+                        SDLC
+                        approaches, and it can save many resources if a hired specialist understands them from the very
+                        beginning.</p>
+                    <h4>CONCLUSION</h4>
+                    <p>We’ll reiterate that the world of technologies changes quickly, and it’s essential to be up to
+                        date.
+                        For now, full-stack developers are a great solution in terms of the restricted budget and
+                        timeframes.
+
+                        There are many technologies that full-stack developers work with, but over the course of time,
+                        IT
+                        specialists have come to the most optimal set of tools that allows delivering the best possible
+                        results. This set is called the MEAN stack, which consists of MongoDB, Express.js, Angular, and
+                        Node.js.
+
+                        It often happens that you lack people with some specific skills for a particular project. For
+                        such
+                        cases, there are such options as dedicated developers or a staff augmentation model. They imply
+                        that
+                        you don’t have to go through a complicated recruitment process to find a person with the
+                        knowledge
+                        you need. It may be especially undue if you won’t need the specialist when a certain project is
+                        over. In such a case, you may want to look for a programmer that will work for you on a
+                        temporary
+                        basis.
+
+                        Besides, as we’ve already mentioned, hiring a MEAN stack developer may be much more beneficial
+                        than
+                        hiring four different software developers with knowledge in each technology of the MEAN stack.
+                    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="like">
+    <div class="d-flex bd-highlight  mb-3">
+        <div class="p-2  bd-highlight"><button type="submit" class="btn rounded  btn-warning">Like</button></div>
+    </div>
+</div>
+<div class="share">
+    <div class="d-flex bd-highlight  mb-3">
+        <div class="ml-auto p-2  bd-highlight"><button type="submit" class="btn rounded  btn-warning">Share</button>
+        </div>
+    </div>
+</div>
+<app-comments></app-comments>
