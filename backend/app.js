@@ -28,8 +28,8 @@ app.get('/*', function (req, res) {
 
 
 // for api calls
-const apii = require("./router/api.js");
-app.use('/api', apii);
+const api = require("./router/api.js");
+app.use('/api', api);
 
 
 

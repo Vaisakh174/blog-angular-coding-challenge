@@ -8,7 +8,7 @@ export class ApiService {
   constructor(private http : HttpClient) { }
 
 getall(){
-return this.http.get("http://localhost:api/api/getall");
+return this.http.get("http://localhost:/api/getall");
 }
 
 
