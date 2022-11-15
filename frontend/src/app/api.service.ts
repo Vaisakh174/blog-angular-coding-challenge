@@ -8,8 +8,9 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getall() {
-    //http://localhost:3000/
-    return this.http.get("api/getall");
+    
+    // return this.http.get("http://localhost:3000/getall"); 
+    return this.http.get("getall"); 
   }
 
 
@@ -18,9 +19,10 @@ export class ApiService {
   //   return this.http.get(`http://localhost:3000/api/getsingle/${id}`);
   //   }
 
-  // posts(data:any){
-  //   return this.http.post("http://localhost:3000/api/post",data);
-  //   }
+  posts(data:any){
+    // return this.http.post("http://localhost:3000/post",data);
+    return this.http.post("post",data);
+    }
 
 
   // deletes(id:any){

@@ -3,8 +3,8 @@ const express = require("express");
 const router = express.Router();
 const DATA = require("../models/blogdata")
 
-//student all list (get)
-router.get('api/getall', async (req, res) => {
+//get all list (get)
+router.get('/getall', async (req, res) => {
 
     try {
         let list = await DATA.find();
@@ -36,8 +36,8 @@ router.get('api/getall', async (req, res) => {
 
 
 
-//add student (post)
-router.post('/api/post', async (req, res) => {
+//add data (post)
+router.post('/post', async (req, res) => {
 
     try {
         let item = {
@@ -46,7 +46,7 @@ router.post('/api/post', async (req, res) => {
             followCount: req.body.followCount,
             articleTitle: req.body.articleTitle,
             articleDate: req.body.articleDate,
-            comments: req.body.comments,
+            comment: req.body.comment,
             content1: req.body.content1,
             content2: req.body.content2,
             content3: req.body.content3,

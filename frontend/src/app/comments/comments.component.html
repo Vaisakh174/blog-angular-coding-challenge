@@ -1,29 +1,33 @@
 <div class="d-flex justify-content-center">
-<div class="border p-3 rounded m-2 mt-3 mb-4">
+    <div class="border p-3 rounded m-2 mt-3 mb-4">
 
-    <div class=" d-flex justify-content-center">
-        <div class="  rounded  p-3 border-article">
-            <div class="col-12">
-                <h2>Comments</h2>
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Enter your Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <br>
-                      <label for="exampleInputPassword1">Enter your comments here</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
+        <div class=" d-flex justify-content-center">
+            <div class="  rounded  p-3 border-article">
+                <div class="col-12">
+                    <h2>Comments</h2>
+                    <form [formGroup]="commentform" (ngSubmit)="onsubmit()">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter your Name</label>
+                            <input type="text" class="form-control" formControlName="user" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <br>
+                            <label for="exampleInputPassword1">Enter your comments here</label>
+                            <input type="text" class="form-control" formControlName="comment"
+                                id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn rounded  btn-warning">Submit</button>
+                    </form>
+                    <h4 class="my-2">Latest comments</h4>
+                    <div *ngFor="let user of blogerData" class="mx-2 border3 my-3 rounded text-white p-3 ">
+                        <p class=" m-2 ">User Name: {{user.user}}</p>
+                        
+                        <p class=" m-2 ">User Comment: {{user.comment}}</p>
+
                     </div>
-                    
-                    <button type="submit" class="btn rounded  btn-warning">Submit</button>
-                </form>
-                <h4 class="my-2">Latest comments</h4>
-                <div class="mx-2">
-                    <p>{{blogerData[0].comments}}</p>
-                    
+
                 </div>
-               
             </div>
         </div>
     </div>
-</div>
 </div>
