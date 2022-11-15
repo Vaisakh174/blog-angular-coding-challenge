@@ -19,10 +19,10 @@ require("./middleware/mongodb.js");
 
 
 const path = require('path');
-app.use(express.static("./dist/blog-case_study-2"));
+app.use(express.static("./dist/frontend"));
 
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname + '/dist/blog-case_study-2/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/frontend/src/index.html'));
 });
 
 
