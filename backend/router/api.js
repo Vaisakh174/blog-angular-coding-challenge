@@ -37,7 +37,7 @@ router.get('/getall', async (req, res) => {
 
 
 //add student (post)
-router.post('/post', async (req, res) => {
+router.post('/api/post', async (req, res) => {
 
     try {
         let item = {

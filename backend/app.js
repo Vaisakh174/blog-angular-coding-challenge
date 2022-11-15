@@ -18,14 +18,23 @@ require("./middleware/mongodb.js");
 
 
 
+const path = require('path');
+app.use(express.static("./dist/blog-case_study-2"));
+
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname + '/dist/blog-case_study-2/index.html'));
+});
+
+
 // for api calls
-const api = require("./router/api.js");
-app.use('/api', api);
+const apii = require("./router/api.js");
+app.use('/api', apii);
 
 
 
 // set port 
-const port = process.envPORT|| 3000;
+const port = `api`;
+// const port = process.envPORT|| 3000;
 app.listen(port, () => {
     console.log(`........port is now connected at ${port} ........`);
 });
