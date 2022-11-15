@@ -4,7 +4,7 @@ const router = express.Router();
 const DATA = require("../models/blogdata")
 
 //student all list (get)
-router.get('/getall', async (req, res) => {
+router.get('api/getall', async (req, res) => {
 
     try {
         let list = await DATA.find();
