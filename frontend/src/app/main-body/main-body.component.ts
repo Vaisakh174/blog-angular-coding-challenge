@@ -8,7 +8,7 @@ import { ApiService } from '../api.service';
 })
 export class MainBodyComponent implements OnInit {
 
-  blogerData: any = [];
+  blogerData: any = [{articleTitle:"",articleDate:""}];
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
@@ -19,7 +19,7 @@ export class MainBodyComponent implements OnInit {
   getdata() {
     this.api.getall().subscribe(res => {
       this.blogerData = res;
-      console.log("incoming data", this.blogerData[0].articleDate);
+      console.log("incoming data from main body", this.blogerData[0]);
     });
   }
 
