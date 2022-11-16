@@ -21,13 +21,13 @@ export class BloggerDatailsComponent implements OnInit {
   incCount() {
     this.blogerData[0].followCount++;
     this.flag = false;
-    this.updates();
+    this.update();
   }
   decCount() {
     if (this.blogerData[0].followCount > 0) {
       this.blogerData[0].followCount--;
       this.flag = true;
-      this.updates();
+      this.update();
     }
   }
   
@@ -40,8 +40,8 @@ export class BloggerDatailsComponent implements OnInit {
 
   }
 
-  updates() {
-    this.api.update(this.blogerData[0].followCount,this.blogerData[0]._id).subscribe((res) => {
+  update() {
+    this.api.updates(this.blogerData[0].followCount,this.blogerData[0]._id).subscribe((res) => {
       // this.blogerDatas = res;
       console.log("incoming data from updatecount ",res);
       
