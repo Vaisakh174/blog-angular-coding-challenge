@@ -9,7 +9,7 @@ export class ApiService {
 
   getall() {
 
-    // return this.http.get("http://localhost:3000/getall"); 
+    // return this.http.get("http://localhost:3000/api/getall"); 
     return this.http.get('/api/getall');
   }
 
@@ -19,7 +19,7 @@ export class ApiService {
   //   }
 
   posts(data: any) {
-    // return this.http.post("http://localhost:3000/post",data);
+    // return this.http.post("http://localhost:3000/api/post",data);
     return this.http.post('/api/post', data);
   }
 
@@ -31,7 +31,7 @@ export class ApiService {
 
   updates(followCount: any, _id: any) {
     return this.http.put('/api/update', { followCount, _id });
-    // return this.http.put('http://localhost:3000/update',{followCount,_id});
+    // return this.http.put('http://localhost:3000/api/update',{followCount,_id});
 
   }
 

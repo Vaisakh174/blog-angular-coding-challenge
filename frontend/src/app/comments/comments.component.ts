@@ -18,9 +18,9 @@ export class CommentsComponent implements OnInit {
   }
 
   commentform: any = new FormGroup({
-    "user": new FormControl(""),
-    "comment": new FormControl("")
-  });
+    user: new FormControl("",[Validators.required,Validators.minLength(5)]),
+    comment: new FormControl("",[Validators.required,Validators.minLength(3)])
+  })
 
   getdata() {
     this.api.getall().subscribe(res => {

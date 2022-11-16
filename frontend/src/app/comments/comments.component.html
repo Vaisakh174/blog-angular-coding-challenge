@@ -8,15 +8,15 @@
                     <form [formGroup]="commentform" (ngSubmit)="onsubmit()">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Enter your Name</label>
-                            <input type="text" class="form-control" formControlName="user" id="exampleInputEmail1" required placeholder="Please Enter a Your Name"
+                            <input type="text" class="form-control" formControlName="user" id="exampleInputEmail1" required placeholder="Please Enter a your Name with minimum 5 letters"
                                 aria-describedby="emailHelp">
                             <br>
                             <label for="exampleInputPassword1">Enter your comments here</label>
-                            <input type="text" class="form-control" formControlName="comment" required placeholder="Please Enter a Your Comment"
+                            <input type="text" class="form-control" formControlName="comment" required placeholder="Please Enter a Your Comment with minimum 3 letters"
                                 id="exampleInputPassword1">
                         </div>
 
-                        <button type="submit" class="btn rounded  btn-warning">Submit</button>
+                        <button [disabled]="commentform.invalid" type="submit" class="btn rounded btn-warning">Submit</button>
                     </form>
                     <h4 class="my-2">Latest comments</h4>
                     <div *ngFor="let user of blogerData" class="mx-2 border3 my-3 rounded text-white p-3 ">
